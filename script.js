@@ -5,6 +5,9 @@ const search = document.getElementById('search'),
   resultHeading = document.getElementById('result-heading'),
   single_mealEl = document.getElementById('single-meal');
 
+//start with a random meal already displayed
+getRandomMeal();
+
 //Search meal and fetch from API, submit event requires us to prevent default, not submitting to a file
 function searchMeal(e) {
   //fetch meals, loop through, output into DOM
